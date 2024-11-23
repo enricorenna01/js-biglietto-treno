@@ -40,3 +40,10 @@ if (userAge < underAge) {
     price = price - ((price * overDiscount) / 100);
 
 }
+
+
+//OUTPUT
+
+//Restituisco il risultato
+const result = `Il prezzo è ${price.toFixed(2)}€`;
+console.log(result);
