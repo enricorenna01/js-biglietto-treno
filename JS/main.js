@@ -1,4 +1,4 @@
-//Definisco gli input necessari
+//DICHIARO LE VARIABILI
 
 
 //Definisco una variabile kmNumber e la trasformo da stringa a numero
@@ -22,5 +22,21 @@ const overAge = 65;
 const underDiscount = 20;
 
 //Salvo una variabile underDiscount per determinare il valore sconto dei over 65
-const underDiscount = 40;
+const overDiscount = 40;
 
+
+//CALCOLO DEL BIGLIETTO
+
+
+//Salvo una variabile price per determinare il prezzo
+let price = kmNumber * kmPrice;
+
+//SE utente minorenna applico sconto underAge
+if (userAge < underAge) {
+    price = price - ((price * underDiscount) / 100);
+
+//ALTRIMENTI SE utente over 65 sconto overAge
+} else if (userAge > overAge) {
+    price = price - ((price * overDiscount) / 100);
+
+}
